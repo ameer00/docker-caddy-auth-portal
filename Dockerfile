@@ -2,7 +2,7 @@ FROM caddy:2.3.0-builder-alpine AS builder
 
 RUN xcaddy build \
 	--with github.com/greenpau/caddy-auth-portal@latest \
-	--with github.com/greenpau/caddy-auth-jwt@vlatest
+	--with github.com/greenpau/caddy-auth-jwt@latest
 
 FROM caddy:2.3.0-alpine
 
